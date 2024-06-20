@@ -28,7 +28,8 @@ export class PaymentService {
                 capture: true,
                 confirmation: {
                   type: 'redirect',
-                  return_url: 'http://localhost:3001/makeorder', //после деплоя нужно поправить заменить
+                  //return_url: 'http://localhost:3001/makeorder', //после деплоя нужно поправить заменить
+                  return_url: 'https://cleancars-client-production.up.railway.app/makeorder',
                 },
                 description: makePaymentDto.description,
               },
